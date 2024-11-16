@@ -1,0 +1,550 @@
+@font-face {
+  font-family: "modern";
+  src: url('/download/ModernFont.ttf');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "modern", sans-serif;
+  margin: 5px;
+}
+
+h1 { font-size: 36px; color: #333; }
+h2 { font-size: 30px; color: #444; }
+h3 { font-size: 24px; color: #555; }
+h4 { font-size: 18px; color: #666; }
+h5 { font-size: 14px; color: #777; }
+h6 { font-size: 12px; color: #888; }
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.three-slots {
+  width: 31.33333%;
+  margin-left: 1%;
+  margin-right: 1%;
+  float: left;
+}
+
+.forumColumn {
+  height: 50px;
+  vertical-align: top;
+}
+
+body {
+  background: #0892d0;
+  min-height: 96%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+div {
+  display: block;
+}
+
+p {
+  padding-left: 10px !important;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav {
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+textarea, input {
+  text-align: left;
+  border-radius: 5px;
+}
+
+blockquote {
+  margin: 0px;
+  border-left: 5px solid #77B9FF;
+  padding-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: #232323;
+}
+
+span {
+  padding: 3px;
+}
+
+table {
+  vertical-align: middle;
+}
+
+.pixel-font {
+  font-family: "modern", sans-serif;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.large-txt {
+  font-size: 2rem;
+}
+
+.download:before {
+  content: "";
+  padding: 5px;
+}
+
+.banned {
+  margin-bottom: 10px;
+  border: 1px solid #AA1111;
+  background-color: #EE3333;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+}
+
+.online, .offline {
+  font-size: 14px;
+  vertical-align: middle;
+  float: right;
+  margin-left: -20px;
+}
+
+.blue-button, .red-button {
+  background-color: #4A90E2;
+  color: #FFF;
+  border: 1px solid #000;
+  margin-top: 10px;
+  margin-left: 3px;
+  border-radius: 5px;
+}
+
+.profile-display {
+  border: 1px solid #000;
+  background-color: #FDFDFD;
+  width: 118px;
+  height: 118px;
+}
+
+#header {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+#info {
+  background-color: #4A90E2;
+  float: right;
+  border: #000000 1px solid;
+  margin: 20px;
+  padding-left: calc(34px - 1em);
+  padding-right: 14px;
+  color: white;
+  width: 120px;
+  text-align: left;
+  font-size: 14px;
+}
+
+#welcome {
+  float: left;
+  margin: 5px 20px 20px 20px;
+  color: white;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  background: #4A90E2;
+  border: 1px solid black;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.label {
+  color: #777;
+  font-size: 12px;
+}
+
+#banner {
+  height: 100px;
+  background-image: url("assets/Banner.png");
+  background-size: 100%;
+  padding-top: 66px;
+  border-radius: 5px;
+}
+
+#navbar {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: solid #000000;
+  border-width: 0px 1px 1px 1px;
+  background-color: #4A90E2;
+  padding: 10px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+#body {
+  margin: auto;
+  margin-top: 10px;
+  width: 900px;
+  border-radius: 5px;
+}
+
+#status, #misc, #news, #subsect, #player, #box, #column, #shopItem {
+  border: 1px solid #000000;
+  background-color: #E9EBF3;
+  border-radius: 5px;
+}
+
+#status {
+  width: 593px;
+  float: left;
+  background-color: #E9EBF3;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#misc {
+  width: 593px;
+  float: left;
+  background-color: #E9EBF3;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+#news {
+  width: 293px;
+  float: right;
+  background-color: #E9EBF3;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#subsect {
+  border: solid #AAAAAA;
+  border-width: 0px 0px 1px 0px;
+  margin: 0px 0px 10px 0px;
+}
+
+#player {
+  border: 1px solid #000000;
+  background-color: #E9EBF3;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#box {
+  border: 1px solid #000000;
+  background-color: #E9EBF3;
+  overflow: auto;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+#column {
+  display: inline-block;
+}
+
+#shopItem {
+  border: 1px solid #000;
+  background-color: #FDFDFD;
+  width: 140px;
+  height: 140px;
+  border-radius: 5px;
+}
+
+.shopTitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin: 4px;
+}
+
+.shopDesc {
+  font-size: 12px;
+  font-weight: bold;
+  color: #555;
+  margin: 2px 2px 2px 4px;
+}
+
+th {
+  background-color: #4A90E2;
+  border-radius: 5px;
+}
+
+td {
+  background-color: #E9EBF3;
+  border-radius: 5px;
+}
+
+.game {
+  padding: 5px;
+  width: 210px;
+  float: left;
+  border-radius: 5px;
+}
+
+.game a {
+  color: #000;
+  padding: 0px;
+}
+
+.game b a {
+  color: #000;
+  padding: 0px;
+}
+
+.game img {
+  width: 100%;
+}
+
+.play-btn {
+  padding: 20px;
+  background-color: #02a202;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.play-btn:hover {
+  background-color: #00c400;
+  cursor: pointer;
+}
+
+.title {
+  color: #333;
+  margin: 2px;
+}
+
+.description {
+  color: #555;
+  margin: 2px;
+  font-size: 12px;
+}
+
+#navbar span span a {
+  color: #fff;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button, select, .button-style {
+  background-color: #4A90E2;
+  color: #FFF;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+a[src="redraw"] {
+  color: #329de7;
+}
+
+.colorPallete {
+  cursor: pointer;
+}
+
+.colorPallete:hover {
+  cursor: pointer;
+}
+
+#body {
+  flex: 1;
+}
+
+html {
+  height: 100%;
+}
+
+#footer {
+  text-align: center;
+  background: #4A90E2;
+  width: 860px;
+  margin: auto;
+  margin-bottom: -37px;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.red-msg {
+  padding: 4px;
+  border: 1px solid darkred;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.shopSideBarButton {
+  padding: 8px 0px 0px 20px;
+  background-color: #4A90E2;
+  border-top: 1px solid #000;
+  height: 25px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.numButtonsHolder {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.numButtonsHolder a {
+  padding: 3px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.shopSideBarButton:hover {
+  border-radius: 5px;
+}
+
+.meshim_widget_widgets_Favicon .default_icon.default_icon_online {
+  color: #e9ebf3 !important;
+}
+
+.thread-title {
+  padding: 10px;
+  background-color: #4A90E2;
+  color: #fff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.button {
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+  background-color: #4A90E2;
+  color: #FFF;
+  border: 1px solid #000;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.mint-text {
+  color: #2BA4FF;
+}
+
+.ace-text {
+  color: #C60000;
+}
+
+.royal-text {
+  color: #FFE600;
+  font-style: italic;
+}
+
+.membership-image {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.membership-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.membership-table tbody tr th {
+  background-color: transparent;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.membership-table tbody tr td {
+  background-color: transparent !important;
+  text-align: center;
+  padding: 12px;
+}
+
+.membership-table, .membership-table th, .membership-table td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 5px;
+}
+
+.membership-table tr:nth-child(even) {
+  background-color: #D6DCF7;
+}
+
+tt, code, kbd, samp, pre {
+  font-family: monospace!important;
+}
+
+pre {
+  color: white;
+  border-left: 5px solid #4A90E2;
+  padding: 5px;
+  padding-top: 0px;
+  width: 94%;
+  background: #333;
+  border-radius: 5px;
+  border-top: 20px solid #4A90E2;
+}
+
+pre::before {
+  content: "Code";
+  position: absolute;
+  margin-top: -19.5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+pre br {
+  display: none;
+}
+
+.spoiler {
+  padding: 5px;
+  border: 1px solid #000;
+  background-color: #4A90E2;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.spoiler:hover {
+  cursor: pointer;
+}
+
+.forumImage {
+  width: auto;
+  max-width: 60%;
+  border-radius: 5px;
+}
+
+.announcement {
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.announcement-text {
+    /* Add any additional styles for the announcement text */
+}

@@ -1,0 +1,1 @@
+console.log('%cWoah, if someone told you to paste something here they could be attempting to steal your account. Do not be foolish', 'color: red; font-size: 20px');

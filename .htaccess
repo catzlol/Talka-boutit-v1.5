@@ -1,0 +1,84 @@
+AddType application/x-httpd-php70 .php
+
+
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^user/([^/]+)/?$ user.php?id=$1 [L,QSA,NC]
+
+
+RewriteCond %{THE_REQUEST} /shop/item\.php\?id=([^\s&]+) [NC]
+RewriteRule ^ shop/item/%1? [R=302,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^shop/item/([^/]+)/?$ /shop/item.php?id=$1 [L,QSA,NC]
+
+# qunjz
+# RewriteCond %{SERVER_PORT} 80
+# RewriteRule ^(.*)$ catzloll.ct8.pl/$1 [R,L]
+
+
+
+RewriteCond %{THE_REQUEST} /forum/thread\.php\?id=([^\s&]+) [NC]
+RewriteRule ^ forum/thread/%1? [R=302,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^forum/thread/([^/]+)/?$ /forum/thread.php?id=$1 [L,QSA,NC]
+
+
+
+RewriteCond %{THE_REQUEST} /forum/board\.php\?id=([^\s&]+) [NC]
+RewriteRule ^ forum/board/%1? [R=302,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^forum/board/([^/]+)/?$ /forum/board.php?id=$1 [L,QSA,NC]
+
+
+
+
+
+#RewriteRule user/(.*)/ user.php?id=$1
+#RewriteRule forum/thread/(.*) /forum/thread.php?id=$1
+
+
+RewriteCond %{THE_REQUEST} clan\.php\?id=([^\s&]+) [NC]
+RewriteRule ^ clan/%1? [R=302,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^clan/([^/]+)/?$ /clan.php?id=$1 [L,QSA,NC]
+
+
+# Hide .php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [NC,L]
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+RewriteRule .* - [L,R=404]
+
+<FilesMatch ".(jpg|png|gif)$">
+ErrorDocument 404 "/assets/clans/1.png"
+</FilesMatch>
+
+
+
+
+
+# RewriteBase /
+# RewriteCond %{REQUEST_FILENAME} !-f 
+# RewriteCond %{REQUEST_URI} \.(gif|jpg|jpeg|png)$ 
+# RewriteRule (.*) /assets/bh.png [L]
+
+
+
+ErrorDocument 404 404.php
+
+ErrorDocument 403 403.php
+
+
+
