@@ -1,6 +1,7 @@
 # Talka-boutit Website Configuration Guide
 
-I am no longer working on this version, the site will be remade. Effective 4/6/2024
+This website will probably not be worked on, as such, it is open sourced.
+
 ## Setup Requirements
 
 To establish Talka-boutit on your web server, ensure that you have the following:
@@ -10,7 +11,7 @@ To establish Talka-boutit on your web server, ensure that you have the following
 - MySQL database
 - A Functional Braincell
 
-Talka-boutit runs on serv00 by default. XAMPP has problems, WAMP has not been tested. Drag the files to the public_html folder in domains of the file manager.
+Talka-boutit runs on serv00 by default. XAMPP and WAMP will work. Drag the files to the public_html folder in domains of the file manager. WAMP works, but XAMPP is easier to set up.
 
 1. **Database Configuration:**
 
